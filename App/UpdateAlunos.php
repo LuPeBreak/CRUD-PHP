@@ -13,6 +13,7 @@ $data = [
 
 $update->build('alunos',$data,"Where id= {$_POST["id"]}");
 
-header("location:http://localhost/crud/");
+header("location:http://localhost:8001");
+
 
 ?>

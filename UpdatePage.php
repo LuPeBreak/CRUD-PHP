@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<form action="app\UpdateAlunos" method="POST">
+<form action="app\UpdateAlunos.php" method="POST">
 <input type="hidden" name="id"  value="<?php echo "{$aluno['id']}"?>" readonly><br>
   Nome: <input type="text" value="<?php echo "{$aluno['nome']}"?>" name="nome"><br>
   Email: <input type="text" value= "<?php echo "{$aluno['email']}"?>" name="email"><br>

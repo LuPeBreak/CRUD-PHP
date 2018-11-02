@@ -1,3 +1,9 @@
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<form action="app\InsertAlunos.php" method="POST">
+<form action="App/InsertAlunos.php" method="POST">
   Nome: <input type="text" name="nome"><br>
   Email: <input type="text" name="email"><br>
   <input type="submit" value="Submit">
@@ -28,7 +34,7 @@
         echo "<tr>";
         echo "<td>{$aluno['nome']}</td>";
         echo "<td>{$aluno['email']}</td>";
-        echo "<td><a href='App/DeleteAlunos.php?id={$aluno['id']}'>Delete</a>/<a href='UpdatePage?id={$aluno['id']}'>Update</a></td>";
+        echo "<td><a href='App/DeleteAlunos.php?id={$aluno['id']}'>Delete</a>/<a href='UpdatePage.php?id={$aluno['id']}'>Update</a></td>";
         echo "</tr>";
       }
     ?>

@@ -13,6 +13,6 @@ $data = [
 
 $insert->build('alunos',$data);
 
-header("location:http://localhost/crud/");
+header("location:http://localhost:8001");
 
 ?>
