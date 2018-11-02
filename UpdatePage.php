@@ -2,8 +2,7 @@
 <html>
 <head>
     <?php 
-    define("_DS_", DIRECTORY_SEPARATOR);
-    require __DIR__._DS_."App"._DS_."GetAluno.php";
+    require __DIR__."/App/GetAluno.php";
     ?>
     <meta charset="utf-8" />
     <title>Page Title</title>

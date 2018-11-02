@@ -27,8 +27,7 @@ error_reporting(E_ALL);
     <th>Email</th> 
   </tr>
 <?php
-      define("_DS_", DIRECTORY_SEPARATOR);
-      require __DIR__._DS_."App"._DS_."ReadAlunos.php";
+      require __DIR__."/App/ReadAlunos.php";
 
       foreach($alunos as $aluno){
         echo "<tr>";

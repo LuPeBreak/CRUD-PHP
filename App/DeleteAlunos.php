@@ -1,11 +1,13 @@
 <?php 
 
-define("_DS_", DIRECTORY_SEPARATOR);
-require __DIR__._DS_."Crud"._DS_."Delete.php";
+require __DIR__."/../Config.php";
+require __DIR__."/Crud/Delete.php";
+
 
 $delete = new Delete;
 $alunos = $delete->build('alunos',"where id={$_GET['id']}");
 
-header("location:http://localhost:8001");
+
+header("location:http://$host:$port");
 
 ?>

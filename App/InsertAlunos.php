@@ -1,8 +1,7 @@
 <?php 
-define("_DS_", DIRECTORY_SEPARATOR);
 
-
-require __DIR__._DS_."Crud"._DS_."insert.php";
+require __DIR__."/../Config.php";
+require __DIR__."/Crud/insert.php";
 
 $insert = new insert;
 
@@ -13,6 +12,7 @@ $data = [
 
 $insert->build('alunos',$data);
 
-header("location:http://localhost:8001");
+
+header("location:http://$host:$port");
 
 ?>

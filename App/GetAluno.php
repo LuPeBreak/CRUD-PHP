@@ -1,7 +1,7 @@
 <?php 
 
 
-require __DIR__._DS_."Crud"._DS_."Read.php";
+require __DIR__."/Crud/Read.php";
 
 $read = new read;
 $aluno = $read->build('alunos',"WHERE id={$_GET['id']}");

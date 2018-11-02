@@ -1,8 +1,7 @@
 <?php 
-define("_DS_", DIRECTORY_SEPARATOR);
 
-
-require __DIR__._DS_."Crud"._DS_."Update.php";
+require __DIR__."/../Config.php";
+require __DIR__."/Crud/Update.php";
 
 $update = new Update;
 
@@ -13,7 +12,8 @@ $data = [
 
 $update->build('alunos',$data,"Where id= {$_POST["id"]}");
 
-header("location:http://localhost:8001");
+
+header("location:http://$host:$port");
 
 
 ?>
