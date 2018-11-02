@@ -8,6 +8,7 @@ $delete = new Delete;
 $alunos = $delete->build('alunos',"where id={$_GET['id']}");
 
 
-header("location:http://$host:$port");
+header("location:http://$root");
+
 
 ?>

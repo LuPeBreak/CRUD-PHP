@@ -13,6 +13,7 @@ $data = [
 $insert->build('alunos',$data);
 
 
-header("location:http://$host:$port");
+header("location:http://$root");
+
 
 ?>

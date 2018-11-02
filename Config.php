@@ -4,5 +4,6 @@ $host="localhost";
 $user="root";
 $pass="";
 $db="crud";
-$port="8001"
+$root = $_SERVER['HTTP_HOST'];
+
 ?>

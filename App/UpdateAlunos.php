@@ -13,7 +13,7 @@ $data = [
 $update->build('alunos',$data,"Where id= {$_POST["id"]}");
 
 
-header("location:http://$host:$port");
+header("location:http://$root");
 
 
 ?>
