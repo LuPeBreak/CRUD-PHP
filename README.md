@@ -1,6 +1,6 @@
 ## Objetivo
 
-O objetivo desse projeto é criar um simples crud organizado, sem a utilizaçao do Composer, frameworks e plugins
+O objetivo desse projeto é criar um simples crud organizado, sem a utilizaçao do Composer, frameworks ou qualquer linguagem que nao PHP (vanilla)
 
 ## Instalação 
 
